@@ -42,21 +42,17 @@ document.addEventListener('DOMContentLoaded', function () {
         }]
 
 
-    async function getJson(item, i) {
-        const response = await fetch('https://covid-api.mmediagroup.fr/v1/cases?country=' + item);
-        const json = await response.json(); //extract JSON from the http response
-        country_data[i].value = await json["All"]["confirmed"]
+   function getJson(item, i) {
+        $.getJSON('https://covid-api.mmediagroup.fr/v1/cases?country=' + item, function (result) {
+            country_data[i].value = JSON.parse(result)["All"]["confirmed"]
+        })
     }
 
     (async () => {
         await countries.forEach(function (item, i) {
             getJson(item, i)
         })
-    })().then(drawChartAfterTimeout)
-    
-    function drawChartAfterTimeout() {
-        setTimeout(() => drawChart(), 200)
-    }
+    })().then(drawChart)
 
     function drawChart() {
         Highcharts.mapChart('container', {
