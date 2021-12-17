@@ -19,9 +19,10 @@
     <div class="container py-3" id="container"></div>
     <div>
         <h3 class="text-center">Chart description</h3>
-        <p>This map allows us to see how COVID-19 affected on each of our countries. The indicator shows us
-            total infected population number. The most infected countries are France, Germany and Spain, and the
-            least infected are Iceland, Finland and Estonia.</p>
+        <p>This map allows us to see how COVID-19 affected each of our countries. The indicator
+            shows us the total number of infected population. The most infected countries are
+            France, Germany and Spain, and the least infected are Iceland, Finland and Estonia.
+            It makes common sense, as it depends on the population of the country.</p>
         <h5>Data source</h5>
         <p>The data was fetched from M-Media-Group api:</p>
         <a href="https://github.com/M-Media-Group/Covid-19-API">Github</a>
