@@ -21,8 +21,8 @@
         <p>In this chart we can see the Gross domestic product of each of our countries. This indicator is the
             market value of all final good and services from a nation in 2021. We can see that there are two
             countries which GDP is much bigger than others' (Germany and France). This means that
-            these two countries produce more goods. Also, we see that Croatia, Iceland, Slovenia and Estonia have very low
-            GDPs. That's because these countries use imported goods from other countries. </p>
+            these two countries produce more goods. On the other hand, we see that Croatia, Iceland, Slovenia and
+            Estonia have very low GDPs. That's because these countries use imported goods from other countries. </p>
     </div>
 
     <!--    end page content    -->
