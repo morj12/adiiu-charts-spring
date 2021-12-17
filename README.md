@@ -1,6 +1,4 @@
-# Title
-
-Dashboard web application made using various back-end and front-end technologies.
+# Dashboard web application
 
 ## Description
 
