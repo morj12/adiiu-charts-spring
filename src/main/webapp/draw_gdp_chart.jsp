@@ -29,11 +29,7 @@
                 name: 'GDP',
                 data: [
                     <c:forEach var="country" items="${countries}">
-                    <%="[`"%>
-                    ${country.name}
-                    <%="`,"%>
-                    ${country.gdp}
-                    <%="],"%>
+                    <c:out value="[` ${country.name} `, ${country.gdp} ],"/>
                     </c:forEach>
                 ]
             }]
