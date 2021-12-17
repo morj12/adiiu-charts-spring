@@ -18,11 +18,9 @@
     <div class="container my-4 text-center">
         <p>This web application allows us to see some characteristics of some European
             countries. There are twelve countries: </p>
-
         <div class="container">
             <jsp:include page="countries.jsp"></jsp:include>
         </div>
-
     </div>
 
     <!--    end page content    -->
