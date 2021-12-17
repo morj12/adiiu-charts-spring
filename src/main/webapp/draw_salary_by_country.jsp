@@ -22,13 +22,7 @@
             },
             series: [
                 <c:forEach var="country" items="${countries}">
-                <%="{name:`"%>
-                ${country.name}
-                <%="`,data: ["%>
-                ${country.grossWage}
-                <%=","%>
-                ${country.netWage}
-                <%="]},"%>
+                <c:out value="{name: ` ${country.name} `, data: [ ${country.grossWage} , ${country.netWage} ]}," />
                 </c:forEach>
     ]
 
