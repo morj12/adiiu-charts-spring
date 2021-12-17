@@ -25,9 +25,7 @@ xAxis: {
   categories: [
   //Java code which generates all the categories
   <c:forEach var="country" items="${countries}">
-  <%="`"%>
-  ${country.name}
-  <%="`,"%>
+    <c:out value="` ${country.name} `,"/>
   </c:forEach>
   ]
 },
