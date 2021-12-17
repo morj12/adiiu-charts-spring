@@ -44,3 +44,10 @@ The variable *countries* is a list of objects of type **Country** created by a c
 * Open the project with Intellij Idea
 * Run it
 * Go to localhost:8080/
+
+## Tasks to do
+
+- [ ] Add accessibility options
+- [ ] Add an accessibility chapter to this documentation
+- [ ] Add comments to the code
+- [ ] Create a video explaining the structure
