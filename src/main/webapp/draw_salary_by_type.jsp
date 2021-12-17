@@ -18,9 +18,7 @@
             xAxis: {
                 categories: [
                     <c:forEach var="country" items="${countries}">
-                    <%="`"%>
-                    ${country.name}
-                    <%="`,"%>
+                    <c:out value="` ${country.name} `,"/>
                     </c:forEach>
                 ]
             },
@@ -33,8 +31,7 @@
                 name: 'Gross salary',
                 data: [
                     <c:forEach var="country" items="${countries}">
-                    ${country.grossWage}
-                    <%=","%>
+                    <c:out value="${country.grossWage}," />
                     </c:forEach>
                 ]
             },
@@ -42,8 +39,7 @@
                     name: 'Net salary',
                     data: [
                         <c:forEach var="country" items="${countries}">
-                        ${country.netWage}
-                        <%=","%>
+                        <c:out value="${country.netWage}," />
                         </c:forEach>
                     ]
                 }
