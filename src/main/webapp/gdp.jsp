@@ -7,22 +7,26 @@
     <jsp:include page="template/head.jsp"></jsp:include>
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
-    <title>GDP chart</title>
+    <title>Salary chart</title>
 </head>
 <body>
 <div class="container py-3">
     <jsp:include page="template/nav.jsp"></jsp:include>
     <!--    start page content  -->
-    <jsp:include page="draw_gdp_chart.jsp"></jsp:include>
-
+    <jsp:include page="draw_salary_by_country.jsp"></jsp:include>
+    <jsp:include page="draw_salary_by_type.jsp"></jsp:include>
     <div class="my-3" id="container"></div>
+    <div class="row">
+        <div id="column-by-country" class="col-6"></div>
+        <div id="column-by-salary-type" class="col-6"></div>
+    </div>
     <div>
-        <h3 class="text-center">Chart description</h3>
-        <p>In this chart we can see the Gross domestic product of each of our countries. This indicator is the
-            market value of all final good and services from a nation in 2021. We can see that there are two
-            countries which GDP is much bigger than others' (Germany and France). This means that
-            these two countries produce more goods. On the other hand, we see that Croatia, Iceland, Slovenia and
-            Estonia have very low GDPs. That's because these countries use imported goods from other countries. </p>
+        <h3 class="text-center">Charts description</h3>
+        <p>In these charts we can see gross and net wage of some European countries. The first chart allows us
+            to compare between countries meanwhile the second one allows us to compare between types of wage.
+            We see that the best countries in these are Denmark and Switzerland and the worst ones are
+            Croatia and Spain. In and Belgium there is the biggest difference between gross and net salaries,
+            because taxes there are extremely high.</p>
     </div>
 
     <!--    end page content    -->
