@@ -43,7 +43,6 @@ The variable *countries* is a list of objects of type **Country** created by a c
 
 ## Tasks to do
 
-- [ ] Add accessibility options
-- [ ] Add an accessibility chapter to this documentation
+- [ ] Add accessibility analysis
 - [ ] Add comments to the code
 - [ ] Create a video explaining the structure
