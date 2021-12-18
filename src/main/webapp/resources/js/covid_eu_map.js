@@ -1,7 +1,18 @@
+/**
+ * This script is used to draw a map using external data.
+ */
+
 document.addEventListener('DOMContentLoaded', function () {
+
+    /**
+     * Countries we want to analyze
+     */
     let countries = ['Austria', 'Belgium', 'Denmark', 'Croatia', 'Estonia', 'Finland', 'France',
         'Germany', 'Slovenia', 'Iceland', 'Spain', 'Switzerland']
 
+    /**
+     * Tuple array needed for the chart
+     */
     var country_data = [
         {
             "hc-key": "at",
@@ -41,23 +52,36 @@ document.addEventListener('DOMContentLoaded', function () {
             "value": 10,
         }]
 
-
-   function getJson(item, i) {
+    /**
+     * Fetches a JSON  and fills a field of the tuple array.
+     * @param item country name
+     * @param i array index
+     */
+    function getJson(item, i) {
         $.getJSON('https://covid-api.mmediagroup.fr/v1/cases?country=' + item, function (result) {
             country_data[i].value = result["All"]["confirmed"]
         })
     }
 
+    /**
+     * Asynchronous method which prepares all data and then call the next method.
+     */
     (async () => {
         await countries.forEach(function (item, i) {
             getJson(item, i)
         })
     })().then(drawChartAfterTimeout)
-    
+
+    /**
+     * Calls drawChart method after a quick delay
+     */
     function drawChartAfterTimeout() {
         setTimeout(() => drawChart(), 200)
     }
 
+    /**
+     * Draws a map using Highcharts API
+     */
     function drawChart() {
         Highcharts.mapChart('container', {
             chart: {
