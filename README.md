@@ -19,7 +19,7 @@ The backend part was build using Java Spring framework. It allows to create well
 * **Controller**. The controller allows us to intercept HTML hyperlinks and assign a view to each. Every local direction must have a method which controls it.
 * **Entity**. This package allows us to define data models. In this case, we have one class Country which has four attributes: name, GDP, gross wage and net wage.
 * **Repository**. The content of this package allows us to make structured connections to MySQL database. The interface already has all methods we are going to need, so no need to create new methods or override any.
-* **Webapp**. This package contains all views and front-end sources, such as scripts and images. Each view file has *.jsp* extension (Java Server Page). These files are executed by Java Machine and converted into HTML. In this files we can write Java code using the library JSTL. For example, we need it to iterate over all countries to generate data for our Javascript.
+* **Webapp**. This package contains all views and front-end sources, such as scripts and images. Each view file has *.jsp* extension (Java Server Page). These files are executed by Java Machine and converted into HTML. In this files we can write Java code using JSTL library. For example, we need it to iterate over all countries to generate data for our Javascript.
 ```
 xAxis: {
   categories: [
