@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
    function getJson(item, i) {
         $.getJSON('https://covid-api.mmediagroup.fr/v1/cases?country=' + item, function (result) {
-            country_data[i].value = JSON.parse(result)["All"]["confirmed"]
+            country_data[i].value = result["All"]["confirmed"]
         })
     }
 
@@ -52,7 +52,11 @@ document.addEventListener('DOMContentLoaded', function () {
         await countries.forEach(function (item, i) {
             getJson(item, i)
         })
-    })().then(drawChart)
+    })().then(drawChartAfterTimeout)
+    
+    function drawChartAfterTimeout() {
+        setTimeout(() => drawChart(), 200)
+    }
 
     function drawChart() {
         Highcharts.mapChart('container', {
