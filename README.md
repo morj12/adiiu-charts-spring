@@ -62,7 +62,7 @@ The application is fully compatible with the keyboard. You can have access to ea
 
 The application is built using Bootstrap. It means that it's totally responsive and containers' size is adapted to every screen. When you access the page via mobile phone, the menu bar convert into a drop-down bar with a button. The charts size also depends on your screen size.
 
-### Desactivating CSS
+### Deactivating CSS
 
 If we deactivate CSS, we are still able to read all the content of the page because all HTML content is in the right order.
 
