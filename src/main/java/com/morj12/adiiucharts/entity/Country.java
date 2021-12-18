@@ -5,6 +5,14 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+/**
+ * ENTITY CLASS FOR "COUNTRY"
+ *
+ * This class is needed to work with databases, as it represents
+ * an entry from the MySQL table "country_info".
+ * We need to set fields, constructors, getters and setters.
+ */
+
 @Entity
 @Table(name = "country_info")
 public class Country {
