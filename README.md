@@ -41,8 +41,39 @@ The variable *countries* is a list of objects of type **Country** created by a c
 * Run it
 * Go to localhost:8080/
 
+## Accesibility analysis
+
+We are going to analyze some accesibility and quality parameters of the front-end part.
+
+### Alternative text for images
+
+All images of the application are flags of countries. The code is ubicated [here](src/main/webapp/countries.jsp)
+Each has an alternative tag on, so if the images are disabled, there will be a short description.
+
+### Charts with information
+
+Each chart has a title, a description and the data source is also included. 
+
+### Using only keyboard
+
+The application is fully compatible with the keyboard. You can have access to each page without a mouse.
+
+### Responsiveness
+
+The application is built using Bootstrap. It means that it's totally responsive and containers' size is adapted to every screen. When you access the page via mobile phone, the menu bar convert into a drop-down bar with a button. The charts size also depends on your screen size.
+
+### Desactivating CSS
+
+If we deactivate CSS, we are still able to read all the content of the page because all HTML content is in the right order.
+
+### Content ease
+
+The application is easy, as it has low amount of content per page. So it makes a visitor feel comfortable and not disoriented.
+
 ## Tasks to do
 
-- [ ] Add accessibility analysis
+- [x] Add accessibility analysis
 - [x] Add comments to the code
 - [ ] Create a video explaining the structure
+
+
