@@ -5,6 +5,11 @@
 document.addEventListener('DOMContentLoaded', function () {
 
     /**
+     * Chart variable
+     */
+    let chart;
+
+    /**
      * Countries we want to analyze
      */
     let countries = ['Austria', 'Belgium', 'Denmark', 'Croatia', 'Estonia', 'Finland', 'France',
@@ -64,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     /**
-     * Asynchronous method which prepares all data and then call the next method.
+     * Asynchronous method which prepares all data and then calls the next method.
      */
     (async () => {
         await countries.forEach(function (item, i) {
@@ -73,17 +78,19 @@ document.addEventListener('DOMContentLoaded', function () {
     })().then(drawChartAfterTimeout)
 
     /**
-     * Calls drawChart method after a quick delay
+     * Calls drawChart method and loads its data after some time
      */
     function drawChartAfterTimeout() {
-        setTimeout(() => drawChart(), 200)
+        drawChart()
+        setTimeout(() =>
+            chart.series[0].setData(country_data), 300)
     }
 
     /**
      * Draws a map using Highcharts API
      */
     function drawChart() {
-        Highcharts.mapChart('container', {
+        chart = Highcharts.mapChart('container', {
             chart: {
                 map: 'custom/europe',
                 borderWidth: 1,
@@ -115,7 +122,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 dataLabels: {
                     enabled: true,
                     format: '{point.name}'
-                }
+                },
             }]
         });
     }
