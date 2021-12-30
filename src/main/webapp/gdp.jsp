@@ -13,8 +13,9 @@
 <div class="container py-3">
     <jsp:include page="template/nav.jsp"></jsp:include>
     <!--    start page content  -->
-    <jsp:include page="draw_salary_by_country.jsp"></jsp:include>
-    <jsp:include page="draw_salary_by_type.jsp"></jsp:include>
+<%--    <jsp:include page="draw_salary_by_country.jsp"></jsp:include>--%>
+<%--    <jsp:include page="draw_salary_by_type.jsp"></jsp:include>--%>
+    <jsp:include page="draw_gdp_chart.jsp"></jsp:include>
     <div class="my-3" id="container"></div>
     <div class="row">
         <div id="column-by-country" class="col-6"></div>
