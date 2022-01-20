@@ -23,11 +23,11 @@
     </div>
     <div>
         <h3 class="text-center">Chart description</h3>
-        <p>In these charts we can see gross and net wage of some European countries. The first chart allows us
-            to compare between countries meanwhile the second one allows us to compare between types of wage.
-            We see that the best countries in these are Denmark and Switzerland and the worst ones are
-            Croatia and Spain. In and Belgium there is the biggest difference between gross and net salaries,
-            because taxes there are extremely high.</p>
+        <p>In this chart we can see the Gross domestic product of each of our countries. This indicator is the
+            market value of all final good and services from a nation in 2021. We can see that there are two
+            countries which GDP is much bigger than others' (Germany and France). This means that
+            these two countries produce more goods. Also, we see that Croatia, Iceland, Slovenia and Estonia have very low
+            GDPs. That's because these countries use imported goods from other countries.</p>
     </div>
 
     <!--    end page content    -->
