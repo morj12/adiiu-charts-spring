@@ -22,7 +22,7 @@
         <div id="column-by-salary-type" class="col-6"></div>
     </div>
     <div>
-        <h3 class="text-center">Charts description</h3>
+        <h3 class="text-center">Chart description</h3>
         <p>In these charts we can see gross and net wage of some European countries. The first chart allows us
             to compare between countries meanwhile the second one allows us to compare between types of wage.
             We see that the best countries in these are Denmark and Switzerland and the worst ones are
