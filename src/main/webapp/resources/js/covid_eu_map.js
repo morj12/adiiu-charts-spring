@@ -21,40 +21,40 @@ document.addEventListener('DOMContentLoaded', function () {
     var country_data = [
         {
             "hc-key": "at",
-            "value": 10,
+            "value": 0,
         }, {
             "hc-key": "be",
-            "value": 10,
+            "value": 0,
         }, {
             "hc-key": "dk",
-            "value": 10,
+            "value": 0,
         }, {
             "hc-key": "hr",
-            "value": 10,
+            "value": 0,
         }, {
             "hc-key": "ee",
-            "value": 10,
+            "value": 0,
         }, {
             "hc-key": "fi",
-            "value": 10,
+            "value": 0,
         }, {
             "hc-key": "fr",
-            "value": 10,
+            "value": 0,
         }, {
             "hc-key": "de",
-            "value": 10,
+            "value": 0,
         }, {
             "hc-key": "si",
-            "value": 10,
+            "value": 0,
         }, {
             "hc-key": "is",
-            "value": 10,
+            "value": 0,
         }, {
             "hc-key": "es",
-            "value": 10,
+            "value": 0,
         }, {
             "hc-key": "ch",
-            "value": 10,
+            "value": 0,
         }]
 
     /**
