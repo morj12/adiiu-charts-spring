@@ -69,11 +69,3 @@ If we deactivate CSS, we are still able to read all the content of the page beca
 ### Content ease
 
 The application is easy, as it has low amount of content per page. So it makes a visitor feel comfortable and not disoriented.
-
-## Tasks to do
-
-- [x] Add accessibility analysis
-- [x] Add comments to the code
-- [ ] Create a video explaining the structure
-
-
