@@ -14,7 +14,7 @@
                     <a class="nav-link" href="gdp">GDP chart</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="covid">COVID map</a>
+                    <a class="nav-link" href="population">Population map</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="https://www.uib.cat/">UIB</a>

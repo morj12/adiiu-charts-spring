@@ -62,12 +62,12 @@ public class MainController {
     }
 
     /**
-     * Covid map request
-     * @return covid page view
+     * Population map request
+     * @return population page view
      */
-    @RequestMapping("/covid")
-    public String covidMapping() {
-        return "covid.jsp";
+    @RequestMapping("/population")
+    public String populationMapping() {
+        return "population.jsp";
     }
 
 }
