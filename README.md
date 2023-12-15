@@ -5,7 +5,7 @@
 The purpose of  this web application is to show a dashboard, which includes some charts of different types. These charts show some data of twelve European countries. There are three pages with charts:
 * **Salary**. The chart on the left side allows us to compare salaries by country, and the chart of the right side shows us the comparison between gross and net salary of each country.
 * **GDP**. This pie chart allows us to compare Gross Domestic Product (nominal) for each country.
-* **Covid**. This map gives us a vision of the Covid situation on each country.
+* **Population**. This map gives us a vision of the population of each country.
 * The footer contains two links: the first one redirects to home page and the second one is my Github link.
 
 ### Technology
