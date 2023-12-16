@@ -8,6 +8,8 @@ The purpose of  this web application is to show a dashboard, which includes some
 * **Population**. This map gives us a vision of the population of each country.
 * The footer contains two links: the first one redirects to home page and the second one is my Github link.
 
+![Screenshot](img/scr.png)
+
 ### Technology
 
 The front-end part was build using:
